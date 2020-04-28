@@ -1,0 +1,226 @@
+.priority {
+    position: relative;
+    font-size: 2rem;
+    padding-top: 5.4em;
+}
+
+.priority::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 15em;
+    background-color: #F2F2F2;
+    z-index: -2;
+}
+
+.priority::before {
+    content: "";
+    position: absolute;
+    top: calc(15em - 5.7rem);
+    right: 0;
+    width: 5.7rem;
+    height: 5.7rem;
+    background-color: #fff;
+    z-index: -1;
+}
+
+.priority-wrapper {
+    display: flex;
+}
+
+.priority-box-container {
+    max-width: 70%;
+    flex: 70%;
+    display: flex;
+    padding-right: 9.375em;
+}
+
+.priority-box-left {
+    max-width: 50%;
+    flex: 50%;
+    padding-top: 3.5em;
+}
+
+.priority-box-item {
+    display: block;
+    background-image: url("../assets/img/priority/priority-1.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 17vw;
+    position: relative;
+}
+
+.priority-box-right .priority-box-item:first-child {
+    background-image: url("../assets/img/priority/priority-2.png");
+}
+
+.priority-box-left .priority-box-item:last-child {
+    background-image: url("../assets/img/priority/priority-3.png");
+    margin-top: 2.4em;
+    margin-right: 4em;
+}
+
+.priority-box-right .priority-box-item:last-child {
+    background-image: url("../assets/img/priority/priority-4.png");
+    margin-top: 2.4em;
+}
+
+.priority-box-item::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 95%;
+    height: 93%;
+    border: 1px solid #fff;
+    opacity: 0.2;
+    background-color: transparent;
+}
+
+.priority-box-item::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 2em;
+    height: 2em;
+    background-color: #fff;
+}
+
+.priority-box-right .priority-box-item:first-child::after {
+    bottom: unset;
+    top: 0; 
+    background-color: #F2F2F2;
+}
+
+.priority-box-right .priority-box-item:last-child::after {
+    bottom: unset;
+    right: unset;
+    top: 0;
+    left: 0;
+}
+
+.priority-item-name{
+    position: absolute;
+    bottom: 1em;
+    left: 1em;
+    font-size: 2.1em;
+    color: #fff;
+    font-family: var(--euclid-bold);
+
+}
+
+.priority-box-right {
+    max-width: 50%;
+    flex: 50%;
+}
+
+.priority-box-right > .priority-box-item:first-child {
+    margin-left: 4em;
+}
+
+.priority-info {
+    max-width: 30%;
+    flex: 30%;
+    padding-right: 8em;
+    padding-top: 3em;
+}
+
+.priority-info span {
+    display: block;
+    font-weight: 500;
+    font-size: 1.6rem;
+    line-height: 3rem;
+    opacity: 0.8;
+    margin-top: 2.815em;
+}
+
+/* Media Queries */
+@media (max-width: 1366px) {
+    .priority {
+        font-size: 1.43rem;
+    }
+    .priority-info {
+        padding-right: 5em;
+    }
+}
+@media (max-width: 1024px) {
+    .priority-box-container {
+        padding-right: 5em;
+    }
+    .priority-wrapper {
+        flex-direction: column-reverse;
+    }
+    .priority-box-container {
+        max-width: 100%;
+        flex: 100%;
+    }
+    .priority-info {
+        max-width: 100%;
+        flex: 100%;
+        display: flex;
+        align-items: flex-end;
+        padding-left: 5em;
+    }
+    .priority-info h1 {
+        margin-right: 2em;
+    }
+    .priority-info span {
+        margin-top: 0;
+    }
+    .priority-box-container {
+        margin-top: 3em;
+        padding-right: 0;
+    }
+    .priority-box-item {
+        height: 29.3vw;
+    }
+}
+@media (max-width: 768px) {
+    .priority {
+        font-size: 1.3rem;
+    }
+    .priority-info {
+        padding-right: 2.5rem;
+        padding-left: 2.5rem;
+    }
+}
+@media (max-width: 600px) {
+    .priority-info {
+        flex-direction: column;
+    }
+    .priority-info span {
+        margin-top: 1.5rem;
+    }
+    .priority-box-container {
+        padding-left: 1.3rem;
+    }
+}
+@media (max-width: 480px) {
+    .priority {
+        font-size: 1.24rem;
+    } 
+    .priority-box-container {
+        overflow-x: scroll;
+        padding-bottom: 2rem;
+    }
+    .priority-box-left,
+    .priority-box-right {
+        display: flex;
+        max-width: max-content;
+        padding: 0;
+    }
+    .priority-box-item {
+        width: 27rem;
+        height: 16.8rem;
+        margin: 0 !important;
+        margin-left: 1.2rem !important;
+    }
+    .priority-box-right .priority-box-item:first-child::after {
+        background-color: #fff;
+    }
+}

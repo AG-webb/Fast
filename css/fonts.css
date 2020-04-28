@@ -1,0 +1,19 @@
+@font-face {
+    font-family: "Euclid Flex Bold";
+    src: url("../assets/fonts/EuclidFlex-Bold.ttf");
+}
+
+@font-face {
+    font-family: "Euclid Flex";
+    src: url("../assets/fonts/EuclidFlex-Regular.ttf");
+}
+
+@font-face {
+    font-family: "Raleway";
+    src: url("../assets/fonts/Raleway-Regular.ttf");
+}
+
+@font-face {
+    font-family: "Raleway Bold";
+    src: url("../assets/fonts/Raleway-ExtraBold.ttf");
+}

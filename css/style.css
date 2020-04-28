@@ -1,0 +1,13 @@
+@import 'fonts.css';
+@import 'reset.css';
+@import 'variables.css';
+@import 'global-classes.css';
+@import 'header.css';
+@import 'about.css';
+@import 'science.css';
+@import 'priority.css';
+@import 'Chart.min.css';
+@import 'main-chart.css';
+@import 'impact.css';
+@import 'donate.css';
+@import 'footer.css';

@@ -1,0 +1,16 @@
+:root {
+    /* Fonts */
+    --body-fs: "Raleway";
+    --raleway-bold: "Raleway Bold";
+    --euclid: "Euclid Flex";
+    --euclid-bold: "Euclid Flex Bold";
+
+    /* Gradient */
+    --main-gradient: linear-gradient(268.4deg, #FFFFFF -0.25%, #71078E 22.83%, #7A0899 33.66%, #5D25B1 45.18%, #2B57DB 67.36%, #0C76F5 84.18%, #0082FF 93.55%, #0586FF 96.61%, #1391FF 100.2%, #2BA3FF 104.05%, #4BBCFF 108.05%, #6CD5FF 111.36%, #6CD5FF 118.49%);
+    --pink: linear-gradient(90deg, #420960 0%, #751C73 100%);
+
+    /* Colors */
+    --blue: #005a84;
+    --purple: #71457e;
+    --dark-gold: #9E8B5E;
+}

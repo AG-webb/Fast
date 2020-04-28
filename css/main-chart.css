@@ -1,0 +1,213 @@
+.main-chart {
+    font-size: 2rem;
+    margin-top: 7.5em;
+    padding: 0 8em;
+    position: relative;
+    overflow: hidden;
+}
+
+.main-chart::after {
+    content: "";
+    position: absolute;
+    top: 85%;
+    left: 8em;
+    transform: translateY(-50%);
+    width: 100%;
+    height: 60%;
+    background: linear-gradient(180deg, #F2F2F2 0%, rgba(242, 242, 242, 0) 100%);
+    z-index: -1;
+}
+
+.main-chart h1 {
+    max-width: 75rem;
+}
+
+.chart-wrapper {
+
+    display: flex;
+}
+
+.diagram {
+    max-width: 60%;
+    flex: 60%;
+    margin-top: 5rem;
+    margin-right: 7em;
+    padding-left: 2.3em;
+}
+
+#main-chart {
+    width: 100%;
+    max-height: 60rem;
+}
+
+.chart-content {
+    max-width: 40%;
+    flex: 40%;
+    display: flex;
+    flex-direction: column;
+}
+
+.chart-content-heading span:last-child {
+    font-family: var(--raleway-bold);
+    font-size: 1.3em;
+    line-height: 1.6em;
+}
+
+.chart-content-info {
+    margin-top: 6em;
+}
+
+.chart-content-info > span {
+    font-weight: 500;
+    font-size: 1em;
+    line-height: 1.6em;
+    opacity: 0.8;
+}
+
+.main-points {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 2em;
+}
+
+.main-point {
+    display: flex;
+    align-items: center;
+}
+
+.main-point div {
+    width: 1.9em;
+    height: 1.9em;
+    min-width: 1.9em;
+    min-height: 1.9em;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 50%;
+    margin-right: 1.5rem;
+    padding: 0.5em;
+    background-color: #fff;
+}
+
+.main-point > span {
+    font-family: var(--euclid);
+    font-weight: 500;
+    font-size: 0.6em;
+    line-height: 0.8em;
+    letter-spacing: 0.35em;
+    line-height: 1.5em;
+    text-transform: uppercase;
+    color: #6D6E71;
+}
+
+.main-point div {
+    cursor: pointer;
+}
+
+.main-point div span {
+    display: block;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background: linear-gradient(265.89deg, #5B0673 -10.87%, #5B0673 0.1%, #5B0673 9.4%, #71078E 22.52%, #7A0899 30.63%, #5D25B1 44.72%, #2B57DB 71.86%, #0C76F5 92.45%, #0082FF 103.91%, #0586FF 107.66%, #1391FF 112.05%, #2BA3FF 116.76%, #4BBCFF 121.65%, #6CD5FF 125.71%, #6CD5FF 134.43%);;
+}
+
+.main-point:last-child div span {
+    background: #083672;
+}
+
+@media (max-width: 1650px) {
+    .main-chart {
+        font-size: 1.8rem;
+    }
+}
+@media (max-width: 1366px) {
+    .main-chart {
+        font-size: 1.6rem;
+    }
+
+    .main-chart h1 {
+        max-width: 50rem;
+    }
+
+    .chart-content-info {
+        margin-top: 4em;
+    }
+
+    .diagram {
+        margin-right: 5em;
+    }
+}
+@media (max-width: 1100px) {
+    .main-chart {
+        padding: 0 4rem;
+    }
+
+    .main-chart::after {
+        left: 0;
+        top: 60%;
+    }
+
+    .chart-wrapper {
+        flex-direction: column;
+    }
+
+    .diagram {
+        max-width: 100%;
+        flex: 100%;
+        margin-right: 0;
+        padding-left: 0;
+    }
+
+    .chart-content {
+        max-width: 100%;
+        flex: 100%;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .main-chart .main-points {
+        order: 1;
+        width: 100%;
+        flex: 100%;
+        justify-content: flex-start;
+    }
+
+    .main-point:last-child {
+        margin-left: 15%;
+    }
+
+    .chart-content-heading {
+        order: 2;
+        max-width: 50%;
+        flex: 50%;
+        margin-top: 4em;
+    }
+    
+    .chart-content-info {
+        order: 3;
+        max-width: 50%;
+        flex: 50%;
+    }
+}
+@media (max-width: 768px) {
+    .chart-content-heading {
+        padding-right: 2em;
+    }
+}
+@media (max-width: 600px) {
+    .main-chart {
+        padding: 0 2.5rem;
+    }
+    .chart-content-heading {
+        max-width: 100%;
+        flex: 100%;
+        padding: 0;
+        margin-top: 2em;
+    }
+    
+    .chart-content-info {
+        max-width: 100%;
+        flex: 100%;
+        margin-top: 2em;
+    }
+}

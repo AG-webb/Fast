@@ -1,0 +1,110 @@
+html {
+    font-size: 10px;
+    font-family: var(--body-fs);
+    scroll-behavior: smooth;
+}
+
+h1 {
+    font-size: 8rem;
+    line-height: 8.8rem;
+    font-family: var(--euclid-bold);
+    position: relative;
+}
+
+h1::after {
+    content: "";
+    position: absolute;
+    width: 2.5em;
+    height: 2em;
+    left: -10%;
+    top: -10%;
+    background: linear-gradient(190.24deg, #5B0673 7.98%, #5B0673 12.54%, #5B0673 16.4%, #71078E 21.85%, #7A0899 25.22%, #5D25B1 31.08%, #2B57DB 42.35%, #0C76F5 50.9%, #0082FF 55.67%, #0586FF 57.22%, #1391FF 59.05%, #2BA3FF 61%, #4BBCFF 63.04%, #6CD5FF 64.72%, #6CD5FF 68.34%);
+    opacity: 0.2;
+    filter: blur(90px);
+    border-radius: 50%;
+    transform: rotate(90deg);
+}
+
+h2 {
+    font-size: 5.2rem;
+    line-height: 7.2rem;
+    font-family: var(--euclid-bold);
+}
+
+img {
+    width: 100%;
+    max-width: 100%;
+}
+
+/* Main button  */
+.btn {
+    display: inline-block;
+    text-transform: uppercase;
+    font-size: 1.8rem;
+    line-height: 2.8rem;
+    color: #fff;
+    background: var(--pink);
+    padding: 1.8rem 3.25rem;
+}
+
+/* Slider classes */
+.slick-list {
+    overflow: hidden;
+}
+
+.small-heading {
+    display: block;
+    font-family: var(--euclid);
+    font-weight: 500;
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+    letter-spacing: 0.35em;
+    text-transform: uppercase;
+    color: #307BA4;
+    margin-bottom: 1.4rem;
+}
+
+.text-gradient {
+    background: linear-gradient(248.51deg, #5B0673 -10.87%, #5B0673 0.1%, #5B0673 9.4%, #71078E 22.52%, #7A0899 30.63%, #5D25B1 44.72%, #2B57DB 71.86%, #0C76F5 92.45%, #0082FF 103.91%, #0586FF 107.66%, #1391FF 112.05%, #2BA3FF 116.76%, #4BBCFF 121.65%, #6CD5FF 125.71%, #6CD5FF 134.43%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+
+/* Media Queries */
+@media (max-width: 1650px) {
+    h2 {
+        font-size: 4.8rem;
+    }
+}
+@media (max-width: 1366px) {
+    h1 {
+        font-size: 6.4rem;
+        line-height: 7.2rem;
+    }
+    h2 {
+        font-size: 4.4rem;
+        line-height: 5.6rem;
+    }
+    .btn {
+        font-size: 1.6rem;
+        padding: 1.3rem 2.42rem;
+    }
+}
+@media (max-width: 768px) {
+    h1 {
+        font-size: 5.6rem;
+        line-height: 6.4rem;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 3.4rem;
+        line-height: 4rem;
+    }
+    h2 {
+        font-size: 2.6rem;
+        line-height: 3.2rem;
+    }
+}

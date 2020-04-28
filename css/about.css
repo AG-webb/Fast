@@ -1,0 +1,349 @@
+.about {
+    padding-left: 8rem;
+}
+
+.about-wrapper {
+    padding: 8.5rem 12rem 1.6rem;
+    position: relative;
+    transform: translateY(-6.7vw);
+    background-color: #fff;
+    z-index: 3;
+}
+
+.about-top .about-heading{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.about-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 6rem;
+}
+
+.about-heading h1 {
+    max-width: 250px;
+    position: relative;
+}
+
+.about-heading h1::after {
+    content: "";
+    position: absolute;
+    width: 20rem;
+    height: 16rem;
+    left: -25%;
+    top: -25%;
+    background: linear-gradient(190.24deg, #5B0673 7.98%, #5B0673 12.54%, #5B0673 16.4%, #71078E 21.85%, #7A0899 25.22%, #5D25B1 31.08%, #2B57DB 42.35%, #0C76F5 50.9%, #0082FF 55.67%, #0586FF 57.22%, #1391FF 59.05%, #2BA3FF 61%, #4BBCFF 63.04%, #6CD5FF 64.72%, #6CD5FF 68.34%);
+    opacity: 0.2;
+    filter: blur(90px);
+    border-radius: 50%;
+    transform: rotate(90deg);
+}
+
+.about-description {
+    margin-left: 8.2vw;
+}
+
+.about-description > span:last-child{
+    display: block;
+    font-family: var(--raleway-bold);
+    max-width: 60rem;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 3.2rem;
+    line-height: 4.3rem;
+    font-feature-settings: 'pnum' on, 'lnum' on;
+}
+
+.about-heading .decore-line {
+    width: 8%;
+    height: .8rem;
+}
+
+.about .waves-container-mobile {
+    display: none;
+    margin-top: 6rem;
+    height: 14rem;
+    background: var(--pink);
+    z-index: 2;
+    background: url('../assets/img/waves.gif');
+    mix-blend-mode: screen;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+}
+
+.about .waves-container-mobile::after {
+    content: "";
+    position: absolute;
+    bottom: 100%;
+    right: 100%;
+    width: 1.6rem;
+    height: 1.6rem;
+    background-color:  #000;;
+}
+
+.about .waves-container-mobile::before {
+    content: "";
+    position: absolute;
+    bottom: 99%;
+    right: 0;
+    width: 2.6rem;
+    height: 2.4rem;
+    background-color:  #000;
+}
+
+.about-image {
+    width: 100%;
+    height: 70rem;
+    max-width: 40rem;
+    max-height: 43rem;
+    overflow: hidden;
+    position: relative;
+}
+
+.about-image img {
+    object-fit: cover;
+    position: absolute;
+    top: -12rem;
+    left: 0;
+    width: 100%;
+    height: 70rem;
+}
+
+.about-info {
+    max-width: 48rem;
+    border: 1px solid rgba(0, 0, 0, .2);
+    padding: 5.6rem 0 5.6rem 7.6rem;
+    position: relative;
+}
+
+.about-info .small-heading {
+    position: absolute;
+    left: 3rem;
+    top: -.75rem;
+    background-color: #fff;
+    padding: 0 1.5rem;
+    color: #000;
+}
+
+.about-objectives {
+    list-style: none;
+}
+
+.about-objectives li {
+    font-size: 4.8rem;
+    line-height: 6.4rem;
+    font-feature-settings: 'pnum' on, 'lnum' on;
+    white-space: nowrap;
+    min-width: max-content;
+    font-weight: 100;
+    font-family: var(--body-fs);
+    position: relative;
+}
+
+.about-objectives li::before {
+    content: "";
+    position: absolute;
+    left: -3.5rem;
+    top: 2.3rem;
+    width: .6rem;
+    height: .6rem;
+    background-color: #000;
+    border-radius: 50%;
+}
+
+.about-vertical-text {
+    width: 3.2rem;
+    height: 32rem;
+    position: relative;
+    margin-left: 20rem;
+}
+
+.about-vertical-text span {
+    position: absolute;
+    top: -1.4rem;
+    left: -28.9rem;
+    display: block;
+    width: max-content;
+    font-family: var(--euclid);
+    font-weight: 300;
+    font-size: 1.9rem;
+    line-height: 3.2rem;
+    text-align: right;
+    letter-spacing: 0.19em;
+    text-transform: uppercase;
+    opacity: 0.2;
+    transform: rotate(-90deg);
+    transform-origin: bottom right;
+    white-space: nowrap;
+}
+
+
+/* Media Queries */
+@media (max-width: 1650px) {
+    .about-wrapper {
+        transform: translateY(-8vw);
+    }
+    .about-description {
+        margin-left: 5vw;
+    }
+    .about-image {
+        max-width: 34.1rem;
+        max-height: 37.7rem;
+    }
+    .about-image img {
+        height: 60rem;
+    }
+    .about-objectives li {
+        font-size: 4rem;
+        line-height: 5.6rem;
+    }
+}
+@media (max-width: 1366px) {
+    .about-wrapper {
+        padding: 8.5rem 8rem 1.6rem;
+    }
+    .about-description span:last-child {
+        font-size: 2.6rem;
+        line-height: 3.6rem;
+        max-width: 410px;
+    }
+
+    .about-heading .decore-line {
+        width: 5.7rem;
+        height: .6rem;
+    }
+
+    .about-description {
+        margin: 0;
+    }
+
+    .about-info {
+        max-width: 52rem;
+    }
+
+    .about-vertical-text {
+        margin-left: 0;
+    }
+}
+@media (max-width: 1200px) {
+    .about-image {
+        width: 25rem;
+        height: 29rem;
+    }
+
+    .about-image img {
+        top: -6rem;
+        height: 40rem;
+    }
+
+    .about-info {
+        max-width: 43rem;
+        padding: 4.6rem 0 5.6rem 4.6rem;
+    }
+
+    .about-objectives li {
+        font-size: 3.3rem;
+    }
+}
+@media (max-width: 1024px) {
+    .about {
+        padding-left: 6.4rem;
+    }
+
+    .about .waves-container-mobile {
+        display: block;
+    }
+
+    .about-heading .decore-line {
+        display: none;
+    }
+
+    .about-wrapper {
+        padding: 0;
+        padding: 5rem 4.4rem 0 0;
+        margin-top: 3rem;
+        transform: translateY(0);
+    }
+
+    .about-image {
+        display: none;
+    }
+
+    .about-vertical-text {
+        display: none;
+    }
+
+    .about-info {
+        max-width: 47rem;
+        padding: 6.6rem 0 7.6rem 6.6rem;
+    }
+
+    .about-objectives li {
+        font-size: 4rem;
+    }
+}
+
+@media (max-width: 700px) {
+    .about-objectives li {
+        min-width: initial;
+        white-space: normal;
+    }
+}
+
+@media (max-width: 480px) {
+    .about {
+        padding-left: 24px;
+    }
+
+    .about-heading {
+        flex-direction: column;
+    }
+
+    .about-description {
+        margin-top: 3rem;
+    }
+
+    .about-description span:last-child {
+        font-size: 2.1rem;
+        line-height: 3rem;
+    }
+
+    .about .waves-container-mobile {
+        height: 6.4rem;
+    }
+
+    .about .waves-container-mobile::after {
+        width: .8rem;
+        height: .8rem;
+    }
+
+    .about .waves-container-mobile::before {
+        width: 2em;
+        height: 2rem;
+    }
+
+    .about-objectives li {
+        min-width: initial;
+        white-space: normal;
+        font-size: 2.65rem;
+        line-height: 5.6rem;
+    }
+
+    .about-objectives li::before {
+        left: -1.7rem;
+    }
+
+    .about-info {
+        padding: 2.5rem;
+    }
+
+    .about-wrapper {
+        margin-top: 0;
+        padding-right: 24px;
+    }
+}
